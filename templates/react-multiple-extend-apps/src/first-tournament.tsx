@@ -283,7 +283,7 @@ function TournamentDetail() {
 
   return (
     <>
-      <Button type="link" className="appui:pl-0! appui:mb-2!" onClick={() => navigate('/')}>
+      <Button type="link" className="appui:pl-0! appui:mb-2!" onClick={() => navigate('/first')}>
         ← Back to Tournaments
       </Button>
 

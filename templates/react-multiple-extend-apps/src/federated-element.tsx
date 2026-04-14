@@ -8,10 +8,10 @@ export function FederatedElement() {
   return (
     <div className="appui:p-4">
       <nav className="appui:flex appui:gap-x-4">
-        <Link to="/first" className={pathname === '/first' ? 'appui:font-semibold appui:underline' : undefined}>
+        <Link to="/first" className={pathname.startsWith('/first') ? 'appui:font-semibold appui:underline' : undefined}>
           First tournament service
         </Link>
-        <Link to="/second" className={pathname === '/second' ? 'appui:font-semibold appui:underline' : undefined}>
+        <Link to="/second" className={pathname.startsWith('/second') ? 'appui:font-semibold appui:underline' : undefined}>
           Second tournament service
         </Link>
       </nav>
