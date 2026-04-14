@@ -18,8 +18,8 @@ export function FederatedElement() {
 
       <Routes>
         <Route path="/" index element={<Navigate to="/first" />} />
-        <Route path="/first" element={<FirstTournament />} />
-        <Route path="/second" element={<SecondTournament />} />
+        <Route path="/first/*" element={<FirstTournament />} />
+        <Route path="/second/*" element={<SecondTournament />} />
       </Routes>
     </div>
   )

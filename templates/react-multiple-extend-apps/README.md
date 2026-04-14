@@ -62,15 +62,15 @@ Unlike the single-app `react` template, you do **not** need to set `VITE_AB_EXTE
 {
   // Skips generating index files. These are useful for npm libraries,
   // but unnecessary when the generated code is used locally.
-  unstable_shouldProduceIndexFiles: false,
+  shouldProduceIndexFiles: false,
 
   // Splits generated output into a subdirectory per service name.
   // Required when generating clients for multiple Extend apps to keep
   // each service's types and query functions isolated.
-  unstable_splitOutputByServiceName: true,
+  splitOutputByServiceName: true,
 
   // Overrides specific types that don't resolve cleanly in TypeScript.
-  unstable_overrideAsAny: {
+  overrideAsAny: {
     ProtobufAny: true
   }
 }

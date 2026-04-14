@@ -59,9 +59,9 @@ extend-helper-cli appui upload --namespace $AB_NAMESPACE --name $AB_APPUI_NAME
   basePath: '',
   // By default, the codegen will produce index files (which is useful for libraries published in npm). But, since we are using this locally,
   // we do not need those index files.
-  unstable_shouldProduceIndexFiles: false,
+  shouldProduceIndexFiles: false,
   // Occasionally, a type from the Swagger spec doesn't resolve cleanly to a TypeScript type. You can override it and set the type to any.
-  unstable_overrideAsAny: {
+  overrideAsAny: {
     ProtobufAny: true
   }
 }

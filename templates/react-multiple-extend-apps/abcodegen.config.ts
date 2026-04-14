@@ -1,9 +1,9 @@
 import { type CodegenConfigOptions } from '@accelbyte/codegen'
 
 export default {
-  unstable_shouldProduceIndexFiles: false,
-  unstable_splitOutputByServiceName: true,
-  unstable_overrideAsAny: {
+  shouldProduceIndexFiles: false,
+  splitOutputByServiceName: true,
+  overrideAsAny: {
     ProtobufAny: true
   }
 } satisfies CodegenConfigOptions

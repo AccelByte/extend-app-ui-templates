@@ -2,8 +2,8 @@ import { type CodegenConfigOptions } from '@accelbyte/codegen'
 
 export default {
   basePath: '',
-  unstable_shouldProduceIndexFiles: false,
-  unstable_overrideAsAny: {
+  shouldProduceIndexFiles: false,
+  overrideAsAny: {
     ProtobufAny: true
   }
 } satisfies CodegenConfigOptions
